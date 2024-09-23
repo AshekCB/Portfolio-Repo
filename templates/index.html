@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Abhishek C B | Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 7px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #333;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+        }
+
+        #hero {
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 10px 20px;
+        }
+
+        #hero h1 {
+            font-size: 3.2rem;
+            margin-bottom: 20px;
+        }
+
+        #hero p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        #hero .btn {
+            background-color: white;
+            color: #007BFF;
+            padding: 10px 30px;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        #hero .btn:hover {
+            background-color: #f2f2f2;
+        }
+
+        .section {
+            padding: 60px 20px;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 40px;
+            color: #007BFF;
+        }
+
+        p {
+            text-align: center;
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            justify-items: center;
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        .card p {
+            margin-bottom: 15px;
+        }
+
+        .card a {
+            text-decoration: none;
+            background-color: #007BFF;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .card a:hover {
+            background-color: #0056b3;
+        }
+
+        .timeline {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .timeline-item {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        #about .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 20px;
+        }
+
+        footer {
+            background-color: #007BFF;
+            color: white;
+            text-align: center;
+            padding: 12px;
+        }
+
+        footer .social-links {
+            margin-top: 10px;
+        }
+
+        footer .social-links a {
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: color 0.3s;
+        }
+
+        footer .social-links a:hover {
+            color: #f2f2f2;
+        }
+
+        @media (min-width: 768px) {
+            #about .about-content {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: left;
+            }
+
+            #about .about-content img {
+                margin-right: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">Abhishek C B</div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experience">Experience</a></li>
+			<li><a href="#certifications">Certifications</a></li>
+                    <li><a href="#achievements">Achievements</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <h1>Hi, I'm ABHISHEK C B</h1>
+            <p>Aspiring Software Engineer | ML Enthusiast |Python Programmer</p>
+            <a href="#contact" class="btn">Let’s Connect</a>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <img src="https://media.licdn.com/dms/image/v2/D5603AQEaQnMbVoHr3A/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1723299206391?e=1732752000&v=beta&t=USNtB9ckWg-cJVpwdR6JFvUbLQpTajZ5EbYDOOkvQMM" alt="Abhishek's Photo" class="profile-image">
+                <p>I am an aspiring Computer Science and Engineering graduate with proficiency in Python, Machine Learning, Flask, and MySQL, actively seeking a Software Engineer position. My goal is to leverage my skills in software development to create robust, scalable, and efficient software solutions while continuing to enhance my expertise in the field.
+
+With a strong foundation in Python, I excel in algorithmic solutions and best coding practices. My passion lies in harnessing the transformative potential of Machine Learning to extract valuable insights from data.
+
+I believe in the power of collaboration and recognize that diverse teams are hubs of creativity. I am eager to contribute my skills and foster growth within innovative environments.
+
+If you're interested in technology, programming, or exploring potential synergies, let's connect! I look forward to engaging with like-minded individuals.</p> </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>Programming Language</h3>
+                    <p>Python</p>
+                </div>
+                <div class="card">
+                    <h3>Frameworks</h3>
+                    <p>Flask</p>
+                </div>
+                <div class="card">
+                    <h3>Machine Learning</h3>
+                    <p>Data Preprocessing, Data Analysis, Data Modeling, Evaluation</p>
+                </div>
+                <div class="card">
+                    <h3>Databases</h3>
+                    <p>MySQL</p>
+                </div>
+                <div class="card">
+                    <h3>SDLC</h3>
+                    <p>Software Development Life Cycle</p>
+                </div>
+                <div class="card">
+                    <h3>Libraries</h3>
+                    <p>Pandas, Scikit-Learn, Matplotlib, Seaborn</p>
+                </div>
+                <div class="card">
+                    <h3>Data Scraping</h3>
+                    <p>Beautiful Soup</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>DiaPredictor</h3>
+                    <p>Currently Working on A web-based diabetes prediction tool leveraging ML models with Flask integration.</p>
+                    <a href="https://github.com/AshekCB/Gluco-Vision-the-dia-predictor-.git">View Details</a>
+                </div>
+                <div class="card">
+                    <h3>Web Data Scraper</h3>
+                    <p> Python-based web scraper that extracts product data from the Flipkart website for mobile phones.</p>
+                    <a href="https://github.com/AshekCB/WEB_DATA-SCRAPER.git">View Details</a>
+                </div>
+
+                <div class="card">
+                    <h3>Employee Database Management</h3>
+                    <p>A Flask-based web app for managing employee records with My Sql Databases.</p>
+                    <a href="https://github.com/AshekCB/Employee-Database-Management-System-using-Flask.git">View Details</a>
+                </div>
+
+<div class="card">
+                    <h3>House Price Prediction</h3>
+                    <p>Leveraging the ML Models to predict the house prices based on several features.</p>
+                    <a href="https://github.com/AshekCB/project-1--House_Price_Prediction-.git">View Details</a>
+                </div>
+
+   <div class="card">
+                    <h3>Loan Eligibility Prediction</h3>
+                    <p>Leveraging the ML Model to predict the chance of getting loan based on some features.</p>
+                    <a href="https://github.com/AshekCB/Loan-Eligibility-Prediction.git">View Details</a>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="section">
+        <div class="container">
+            <h2>Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>AI-ML Intern | YBI Foundation</h3>
+<h4>Virtual (Remote)</h4>
+			<h4>04-2024 to 06-2024</h4>
+                    <p>Led the Car Mileage Prediction project with features like MPG, cylinders, weight, and horsepower, achieving 90% 
+accuracy, and developed prototypes to validate feasibility and ensure scalability. 
+Deployed the end-to-end solution successfully: <a href ="https://ashek-car-mileage-prediction.onrender.com/">Check here</a> 
+</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>ML Intern | Bharat Intern</h3>
+<h4>Virtual (Remote)</h4>
+			<h4>10-2023 to 11-2023 </h4>
+                    <p>Delivered the Flower Species Classification project with key attributes like sepal length, sepal width, petal length, 
+and species classification, achieving 98% accuracy. 
+Researched and executed the full ML lifecycle to implement machine learning solutions for large-scale 
+agricultural challenges, enhancing business outcomes. </p><br><center><a href="https://github.com/AshekCB/upgraded_iris_classification.git">Check the Details Here...</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+<section id="certifications" class="section">
+    <div class="container">
+        <h2>Certifications</h2>
+        <div class="card-grid">
+
+<div class="card">
+                <h3>Introduction to Machine Learning</h3>
+                <p>Great Learning Academy</p>
+                <p>Date of Issue : 04 - 2022</p>
+<p><a href="https://olympus.mygreatlearning.com/courses/61719/certificate">Certificate </a>
+
+            </div>
+      
+
+
+            <div class="card">
+                <h3>Technical Support Fundamentals</h3>
+                <p>Google</p>
+		<p>Grade Achieved: 96.50%</p>
+                <p>Date of Issue : 07 - June - 2022</p>
+
+		<p><a href="https://www.coursera.org/account/accomplishments/verify/G5QSX8N4NANG">Certificate </a>
+            </div>
+            <div class="card">
+                <h3>Crash Course on Python</h3>
+                <p>Google</p>
+<p>Grade Achieved: 87.50% </p>
+                <p>Date of Issue : 30 - 06 - 2023</p>
+<p><a href="https://www.coursera.org/account/accomplishments/verify/QJR2EZWWMW3B">Certificate </a>
+            
+</div>
+            <div class="card">
+                <h3>Solutions Architecture Virtual Experience
+Program</h3>
+                <p>AWS : Forage</p>
+                <p>Date of Issue : 26 - 06 - 2023</p>
+<p><a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/AWS/kkE9HyeNcw6rwCRGw_AWS%20APAC_2nNvw8y7iCyrZJRWJ_1687782237396_completion_certificate.pdf">Certificate </a>
+
+            </div>
+
+<div class="card">
+                <h3>Developer and Technology Job Simulation
+</h3>
+                <p>Accenture  : Forage</p>
+                <p>Date of Issue : 29 - 09 - 2023</p>
+<p><a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Accenture%20UK/3xnZEj9kfpoQKW885_Accenture%20UK_2nNvw8y7iCyrZJRWJ_1695975504445_completion_certificate.pdf">Certificate </a>
+
+            </div>
+
+            
+        </div>
+    </div>
+</section>
+
+
+
+
+
+    <section id="achievements" class="section">
+        <div class="container">
+            <h2>Achievements</h2>
+            <div class="card-grid">
+                <div class="card">
+                    <h3>Google Developers Community Membership</h3>
+                    <p>Received in October 2023</p>
+<p><a href="https://developers.google.com/profile/u/100923196790058836666">Profile</a>
+
+                </div>
+                <div class="card">
+                    <h3>Merit Scholarship</h3>
+                    <p>Awarded by JMS Trust Kolkata for academic excellence</p>
+                </div>
+                <div class="card">
+                    <h3>Python Skill Test</h3>
+                    <p>Achieved 90%</p>
+<p><a href="https://media.licdn.com/dms/image/v2/D5622AQHfjf3r0JebtQ/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1726024171322?e=1729728000&v=beta&t=TxBD5ejFwJ1tv6hmfpWA4fzLwBHy-nBmU1ElebFj8zE"> Results</a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <p>If you want to collaborate or ask a question, feel free to contact me.</p>
+           <center> <a href="mailto:ashek9837@gmail.com" class="btn">Send an Email</a></center>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Abhishek C B </p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/abhishek-c-b-206587242/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/AshekCB" target="_blank">GitHub</a>
+                <a href="https://www.hackerrank.com/profile/ashek9837" target="_blank">HackerRank</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
